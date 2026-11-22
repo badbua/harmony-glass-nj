@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harmony Glass &amp; Shower Doors | Custom Shower Glass, Tinton Falls NJ</title>
-<meta name="description" content="Custom frameless shower doors, sliding doors and tub enclosures, measured and installed by Harmony Glass &amp; Shower Doors in Tinton Falls, NJ. Licensed and insured. 5 year warranty.">
+<meta name="description" content="Custom frameless, sliding, corner and neo-angle shower doors, measured, fabricated and installed by Harmony Glass &amp; Shower Doors in Tinton Falls, NJ. Licensed and insured. Free estimates.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230b2540'/%3E%3Ctext x='16' y='22' font-size='17' font-family='Georgia' fill='%237fd1b9' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,12 @@
 <style>
   :root { --bg:#f6f8f9; --card:#ffffff; --ink:#0b2540; --body:#3a4b5e; --muted:#5d6f82; --line:#d6dee6; --blue:#1668b8; --green:#1f8f72; --deep:#0b2540; }
   * { box-sizing:border-box; margin:0; }
-  html { scroll-behavior:smooth; scroll-padding-top:84px; }
+  html { scroll-behavior:smooth; scroll-padding-top:94px; }
   body { background:var(--bg); color:var(--body); font:17px/1.6 "Bricolage Grotesque",system-ui,sans-serif; }
-  img { display:block; max-width:100%; }
+  img { display:block; max-width:100%; height:auto; }
   a { color:inherit; }
   :focus-visible { outline:3px solid var(--blue); outline-offset:3px; border-radius:6px; }
-  .wrap { max-width:1120px; margin:0 auto; padding:0 20px; }
+  .wrap { max-width:1120px; margin:0 auto; padding-inline:20px; }
   h1, h2, h3 { color:var(--ink); line-height:1.08; letter-spacing:-.02em; }
   h1 { font-size:clamp(38px,6.4vw,68px); font-weight:800; }
   h2 { font-size:clamp(28px,4vw,44px); font-weight:800; }
@@ -26,9 +26,9 @@
   .eyebrow { font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--blue); }
 
   .top { position:sticky; top:0; z-index:10; background:#f6f8f9ee; backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
-  .top .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:68px; }
+  .top .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:78px; }
   .logo { text-decoration:none; font-weight:800; font-size:21px; color:var(--ink); line-height:1.05; min-height:44px; display:flex; flex-direction:column; justify-content:center; }
-  .logo img { height:50px; width:auto; }
+  .logo img { height:64px; width:auto; }
   .flogo { color:#fff; font-weight:800; font-size:21px; margin-bottom:8px; } .flogo span { color:#7fd1b9; }
   .top nav { display:flex; gap:8px; align-items:center; }
   .btn { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:12px 22px; border-radius:999px; font:600 16px/1 inherit; text-decoration:none; border:1.5px solid var(--deep); color:var(--deep); background:transparent; cursor:pointer; }
@@ -49,7 +49,7 @@
   section { padding:clamp(56px,8vw,96px) 0; }
   .cards { display:grid; gap:18px; margin-top:32px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:22px; overflow:hidden; }
-  .card img { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 55%; }
+  .card img { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:50% 50%; }
   .card div { padding:20px 22px 24px; }
   .card h3 { font-size:22px; margin-bottom:6px; }
   .also { margin-top:22px; color:var(--muted); } .also a { color:var(--blue); font-weight:600; }
@@ -67,9 +67,10 @@
   .towns { list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:26px 0 8px; }
   .towns li { padding:10px 18px; border-radius:999px; background:var(--card); border:1px solid var(--line); color:var(--ink); font-weight:600; }
   .quote .wrap { display:grid; gap:28px; align-items:start; }
-  .formbox { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:18px; min-height:420px; }
-  .contact { margin-top:22px; display:grid; gap:6px; }
-  .contact a { font-weight:600; color:var(--ink); }
+  .formbox { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:18px; min-height:900px; }
+  .contact { margin-top:16px; display:grid; gap:0; }
+  .contact a { font-weight:600; color:var(--ink); padding-block:10px; }
+  footer :focus-visible { outline-color:#7fd1b9; }
 
   footer { background:var(--deep); color:#b9c8d8; padding:36px 20px; text-align:center; font-size:15px; }
   footer a { color:#fff; display:inline-block; padding-block:10px; }
@@ -77,13 +78,14 @@
   @media (min-width:760px) {
     .hero .wrap { grid-template-columns:1.05fr .95fr; padding-block:64px 80px; }
     .facts ul { grid-template-columns:repeat(4,1fr); max-width:1120px; margin:0 auto; }
-    .cards { grid-template-columns:repeat(2,1fr); }
-    .grid { grid-template-columns:repeat(3,1fr); gap:14px; }
+    .cards { grid-template-columns:repeat(3,1fr); }
+    .grid { grid-template-columns:repeat(4,1fr); gap:14px; }
     .steps { grid-template-columns:repeat(2,1fr); }
     .quote .wrap { grid-template-columns:.8fr 1.2fr; }
   }
-  @media (min-width:1000px) { .cards { grid-template-columns:repeat(4,1fr); } .card h3 { font-size:20px; } .steps { grid-template-columns:repeat(4,1fr); } }
-  @media (max-width:479px) { .cta .primary { flex-basis:100%; } .cta .btn:not(.primary) { flex:1; } .top nav .call { display:none; } }
+  @media (min-width:1000px) { .steps { grid-template-columns:repeat(4,1fr); } }
+  @media (max-width:759px) { .cards { grid-template-columns:1fr; } }
+  @media (max-width:479px) { .cta .primary { flex-basis:100%; } .cta .btn:not(.primary) { flex:1; } .top nav .call span { display:none; } .logo img { height:54px; } .btn.sm { padding:10px 14px; } .formbox { padding:0; border:0; background:none; } }
   @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
 </head>
@@ -93,7 +95,7 @@
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Harmony Glass and Shower Doors, home"><img src="img/logo.png" width="560" height="254" alt="Harmony Glass &amp; Shower Doors"></a>
     <nav aria-label="Main">
-      <a class="btn sm call" href="tel:7324409086">Call (732) 440-9086</a>
+      <a class="btn sm call" href="tel:+17324409086">Call<span>&nbsp;(732) 440-9086</span></a>
       <a class="btn sm primary" href="#quote">Free estimate</a>
     </nav>
   </div>
@@ -103,23 +105,23 @@
   <div class="hero">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Tinton Falls, NJ · Serving all of New Jersey</span>
+        <span class="eyebrow">Tinton Falls · Serving all of NJ</span>
         <h1>Shower glass, <em>made to fit.</em></h1>
-        <p>Custom shower doors and enclosures, precisely measured, fabricated and installed. Licensed, insured and backed by a 5 year warranty.</p>
+        <p>Custom shower doors and enclosures, precisely measured, fabricated and installed. Licensed and insured, with a 5-year warranty on custom installations.</p>
         <div class="cta">
           <a class="btn primary" href="#quote">Get a free estimate</a>
-          <a class="btn" href="tel:7324409086">Call</a>
-          <a class="btn" href="sms:7324409086">Text</a>
+          <a class="btn" href="tel:+17324409086">Call</a>
+          <a class="btn" href="sms:+17324409086">Text</a>
         </div>
       </div>
-      <img src="img/hero.jpg" width="1200" height="676" fetchpriority="high" alt="Frameless corner glass shower enclosure in a bright white bathroom" onerror="this.remove()">
+      <img src="img/hero.jpg" width="1200" height="676" fetchpriority="high" alt="Corner glass shower enclosure with a sliding door in a bright bathroom" onerror="this.remove()">
     </div>
   </div>
 
   <div class="facts">
     <ul>
-      <li><b>5 year warranty</b><span>on custom installations</span></li>
-      <li><b>Licensed &amp; insured</b><span>owner operated</span></li>
+      <li><b>5-year warranty</b><span>on custom installations</span></li>
+      <li><b>Licensed &amp; insured</b><span>owner-operated</span></li>
       <li><b>Free estimates</b><span>no obligation</span></li>
       <li><b>12 years</b><span>of hands-on experience</span></li>
     </ul>
@@ -130,10 +132,9 @@
     <h2>Glass for <em>every shower.</em></h2>
     <p class="lede">Every piece is cut to the measurements of your space, so it fits your tile, your walls and your layout.</p>
     <div class="cards">
-      <article class="card"><img src="img/frameless.jpg" width="1200" height="1600" loading="lazy" alt="Frameless glass shower door and fixed panel on white tile" onerror="this.remove()"><div><h3>Frameless doors</h3><p>Clear glass and minimal hardware for a clean, open look.</p></div></article>
-      <article class="card"><img src="img/sliding.jpg" width="1200" height="1600" loading="lazy" alt="Sliding glass shower door with a towel bar on marble tile" onerror="this.remove()"><div><h3>Sliding systems</h3><p>Glass panels that glide on a rail, ideal where a swinging door has no room.</p></div></article>
-      <article class="card"><img src="img/neo.jpg" width="799" height="1404" loading="lazy" alt="Neo-angle corner shower enclosure with polished brass hardware" onerror="this.remove()"><div><h3>Corner &amp; neo-angle</h3><p>Enclosures built around corners, knee walls, benches and sloped ceilings.</p></div></article>
-      <article class="card"><img src="img/tub.jpg" width="1200" height="1600" loading="lazy" alt="Sliding glass enclosure on a bathtub with black hardware" onerror="this.remove()"><div><h3>Tub enclosures</h3><p>Swap the curtain for glass and keep the water where it belongs.</p></div></article>
+      <article class="card"><img src="img/frameless.jpg" width="900" height="1200" loading="lazy" alt="Frameless glass door and fixed panels with brushed nickel hardware on gray tile" onerror="this.remove()"><div><h3>Frameless doors</h3><p>Clear glass and minimal hardware for a clean, open look.</p></div></article>
+      <article class="card"><img src="img/sliding.jpg" width="900" height="1124" loading="lazy" alt="Sliding glass shower door with a towel bar on marble tile" onerror="this.remove()"><div><h3>Sliding systems</h3><p>Glass panels that glide on a rail, ideal where a swinging door has no room.</p></div></article>
+      <article class="card"><img src="img/neo.jpg" width="900" height="1200" loading="lazy" alt="Neo-angle corner glass shower enclosure with a door and two fixed panels" onerror="this.remove()"><div><h3>Corner &amp; neo-angle</h3><p>Enclosures built around corners, knee walls and sloped ceilings.</p></div></article>
     </div>
     <p class="also">Also: custom mirrors and prefabricated shower kit installs. <a href="#quote">Ask us</a>.</p>
   </section>
@@ -142,7 +143,12 @@
     <span class="eyebrow">Recent work</span>
     <h2>Installed by <em>Harmony.</em></h2>
     <p class="lede">More on <a href="https://www.instagram.com/harmonyglassnj/" rel="noopener">Instagram @harmonyglassnj</a>.</p>
-    <div class="grid" id="grid"></div>
+    <div class="grid">
+      <img src="img/g1.jpg" width="900" height="1200" loading="lazy" alt="Glass shower door and panel with a bench seat and brass hardware" onerror="this.remove()">
+      <img src="img/g3.jpg" width="900" height="1200" loading="lazy" alt="Single glass pivot door on a tiled shower alcove with black hardware" onerror="this.remove()">
+      <img src="img/g4.jpg" width="900" height="1200" loading="lazy" alt="Glass shower door cut to fit under a sloped ceiling" onerror="this.remove()">
+      <img src="img/g2.jpg" width="900" height="1200" loading="lazy" alt="Fixed glass splash panel with brass fixtures on marble tile" onerror="this.remove()">
+    </div>
   </section>
 
   <section id="how">
@@ -150,7 +156,7 @@
       <span class="eyebrow">How it works</span>
       <h2>From quote to <em>finished shower.</em></h2>
       <ol class="steps">
-        <li><h3>Request a quote</h3><p>Tell us about your project. Free estimates, and we respond within 24 hours.</p></li>
+        <li><h3>Request a quote</h3><p>Tell us about your project. Estimates are free, with a 24-hour response.</p></li>
         <li><h3>Measure &amp; plan</h3><p>We visit, take precise measurements and go over glass and hardware options.</p></li>
         <li><h3>Fabrication</h3><p>Your glass is cut and polished to spec so it fits on install day.</p></li>
         <li><h3>Installation</h3><p>Secure mounting, sealing, alignment checks and cleanup, then a walkthrough with you.</p></li>
@@ -170,9 +176,9 @@
       <div>
         <span class="eyebrow">Get started</span>
         <h2>Get a <em>free estimate.</em></h2>
-        <p class="lede">Fill in the form and it goes straight to us. No obligation. Prefer to talk? Call or text.</p>
+        <p class="lede">Fill in the form and it goes straight to us. No obligation, and we respond within 24 hours. Open 7 days a week.</p>
         <div class="contact">
-          <a href="tel:7324409086">(732) 440-9086</a>
+          <a href="tel:+17324409086">(732) 440-9086</a>
           <a href="mailto:harmonyglassnj@gmail.com">harmonyglassnj@gmail.com</a>
           <span>Tinton Falls, NJ 07724</span>
         </div>
@@ -190,25 +196,9 @@
 
 <footer>
   <p class="flogo">Harmony Glass <span>&amp; Shower Doors</span></p>
-  <p>Custom shower glass · Tinton Falls, NJ · Licensed and insured</p>
-  <p><a href="tel:7324409086">(732) 440-9086</a> · <a href="https://www.instagram.com/harmonyglassnj/" rel="noopener">Instagram</a></p>
+  <p>Custom shower glass · Tinton Falls, NJ · Licensed and insured · Open 7 days</p>
+  <p><a href="tel:+17324409086">(732) 440-9086</a> · <a href="https://www.instagram.com/harmonyglassnj/" rel="noopener">Instagram</a></p>
 </footer>
 
-<script>
-  const PHOTOS = [
-    ['g1', 'Black-framed grid glass shower beside a freestanding tub'],
-    ['g2', 'Fixed glass splash panel with brushed brass hardware on marble tile'],
-    ['g3', 'Two-piece neo-angle glass shower enclosure with black hardware'],
-    ['g4', 'Glass shower door cut to fit under a sloped ceiling'],
-    ['g5', 'Inline glass door and panels with chrome hardware on gray tile'],
-    ['g6', 'Corner glass shower with a bench seat and knee wall cutout'],
-  ];
-  for (const [n, alt] of PHOTOS) {
-    const img = new Image();
-    img.alt = alt; img.loading = 'lazy'; img.width = 1200; img.height = 1600; img.src = `img/${n}.jpg`;
-    img.onerror = () => img.remove();
-    document.getElementById('grid').append(img);
-  }
-</script>
 </body>
 </html>
