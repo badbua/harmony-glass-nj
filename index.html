@@ -88,6 +88,12 @@
   @media (max-width:479px) { .cta .primary { flex-basis:100%; } .cta .btn:not(.primary) { flex:1; } .top nav .call span { display:none; } .logo img { height:54px; } .btn.sm { padding:10px 14px; } .formbox { padding:0; border:0; background:none; } }
   @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
+<!-- Meta Pixel (dataset "Harmony Glass & Shower Doors"). Events: PageView, Contact (call/text tap). -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2256991961730917');
+fbq('track','PageView');
+</script>
 </head>
 <body id="top">
 
@@ -198,7 +204,14 @@
   <p class="flogo">Harmony Glass <span>&amp; Shower Doors</span></p>
   <p>Custom shower glass · Tinton Falls, NJ · Licensed and insured · Open 7 days</p>
   <p><a href="tel:+17324409086">(732) 440-9086</a> · <a href="https://www.instagram.com/harmonyglassnj/" rel="noopener">Instagram</a></p>
+  <p><small>This site uses the Meta Pixel to measure visits from our ads.</small></p>
 </footer>
+
+<script>
+  // A tap, not a confirmed call: Meta can't know whether it connected. A blocker can stop the pixel, so never let it break the page.
+  for (const a of document.querySelectorAll('a[href^="tel:"], a[href^="sms:"]'))
+    a.addEventListener('click', () => { try { window.fbq && fbq('track', 'Contact', { method: a.href.startsWith('tel:') ? 'call' : 'text' }); } catch {} });
+</script>
 
 </body>
 </html>
